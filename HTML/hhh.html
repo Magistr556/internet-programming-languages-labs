@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Языки интернет-программирования, лабораторная 1</title>
+  <style>
+   article, aside, details, figcaption, figure, footer,header,
+   hgroup, menu, nav, section { display: block; }
+   
+   .logo {
+        display:block;
+        border-radius: 42px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: transform 0.3s ease;
+    }
+    .logo:hover {
+        
+        transform: scale(1.1);
+    }
+    a {
+        position: sticky;
+        color: black;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+     a:hover {
+        color: purple !important;
+    }
+    header {
+        text-align: center;
+        font-size: 42px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    footer {
+        color:gray;
+        text-align:center;
+        font-weight: lighter;
+        position: relative;
+        bottom: 5px;
+        margin-top: 50px;
+    }
+    main {
+        text-align: center;
+        position: relative;
+        font-size: 20px;
+        max-width: 1100px;
+        color:#3d4859;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin:0 auto;
+    }
+    .group-name {
+        font-weight: normal;
+    }
+    .stud-name {
+        font-weight: normal;
+    }
+    .group-name:hover {
+        color: black !important;
+    }
+    .stud-name:hover {
+        color: black !important;
+    }
+    .list {
+        list-style-type: square;
+        margin-left: 40px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color: #1e2229;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30 px;
+    }
+    .img1, .img2, .img3 {
+        width: 300px;
+        height: auto;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+    .img1:hover, .img2:hover, .img3:hover {
+        transform: scale(1.05);
+    }
+  </style>
+ </head>
+ <body style="background-image: linear-gradient(#A0C3E8,#A1A0E8,#C5A0E8,#E8C5A0,#C3E8A0);">
+    <header>
+        <a href="https://github.com/Ryan1NC">Github</a>
+        <h1>Лабораторная работа 1:</h1>
+        <h2>Персональный сайт студента Скопцова Б.А.</h2>
+        <img class="logo" src="https://avatars.githubusercontent.com/u/152533961?v=4" alt="Логотип" width="250" height="250">
+    </header>
+
+    <main>
+        <p>Я студент группы 23ИВ1б, и вот немного информации обо мне.</p>
+        <ul class="list">
+            <li>Меня зовут Скопцов Богдан.</li>
+            <li>Я поступил в ПензГТУ в 2023 году.</li>
+            <li>Мой любимый цвет - фиолетовый.</li>
+            <li>Тут нужно вставить что-то ещё...</li>
+            <li>Градиент на фоне сайта я взял по палитре, и он должен выглядеть неплохо, но мне так не кажется.</li>
+        </ul>
+        <p>Мне нужно добавить чего-нибудь, чтобы сайт выглядел повнушительнее...</p>
+        <div class="wrapper">
+            <div><a href = "https://en.wikipedia.org/wiki/Chevrolet_Corvette_(C5)"><img class = "img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2004_Chevrolet_Corvette_coupe%2C_front_right%2C_07-21-2024.jpg/330px-2004_Chevrolet_Corvette_coupe%2C_front_right%2C_07-21-2024.jpg" alt="Chevrolet Corvette C5"></a></div>
+            <div><a href = "https://en.wikipedia.org/wiki/SpaceX_Starship"><img class = "img2" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/SpaceX_Starship_ignition_during_IFT-5.jpg" alt="Starship"></a></div>
+            <div><a href = "https://fallout.fandom.com/ru/wiki/%D0%A0%D0%B5%D0%B9%D0%BD%D0%B4%D0%B6%D0%B5%D1%80_%D0%9D%D0%9A%D0%A0"><img class = "img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgZwszwmAW8Bh0ukBbv6BhPWPXsvGZab3FAA&s" alt="NCR ranger"></a></div>
+        </div>
+        <marquee behavior="scroll" direction="left">Крутые вещи, которые определённо стоит поместить сюда. Если нажать на картинку, то откроется статья на вики.</marquee>
+    </main>
+
+    <footer>
+        <p> Выполнил студент группы <span class ="group-name">23ИВ1б</span></p>
+        <p><span class ="stud-name">Скопцов Б.А.</span>, 23ИВ1б, 2026</p>
+    </footer>
+ </body>
+</html>
