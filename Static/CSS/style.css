@@ -169,10 +169,10 @@ img:hover {
     }
 
     label {
+    display: block;
+    text-align: center;
     font-family: Arial, sans-serif;
-    position: absolute;
-    left: 460px;
-    top: 360px;
+
 
     color:#ff0000;
     font-size: 24px;
