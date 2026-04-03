@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const age = parseInt(ageinput.value);
         if (age < 0) {
             alert("NАКАЗАNИЕ");
+            window.location.href = "tic-tac-toe.html";
             return;
         }
         if (age < 18) {

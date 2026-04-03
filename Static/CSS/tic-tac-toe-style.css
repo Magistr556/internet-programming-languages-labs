@@ -1,0 +1,185 @@
+/* NOISE */
+.noise {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../images/noise.jpg);
+    background-size: 2000px;
+
+    opacity: 0.08;
+    transition: opacity 0.8s ease;
+
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* GENERAL */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative; 
+    z-index: 10000;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            #03440099,
+            rgba(23, 0, 0, 0.9)
+        );
+    z-index: -1;
+}
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background: linear-gradient(180deg, #444444, #000000);
+    color: #0dff0099;
+    padding: 15px;
+    box-shadow: 0 0 15px #0dff0099;
+}
+
+/* LINK */
+
+.header-left {
+    position: absolute;
+    left: 30px;
+}
+
+.header-right {
+    position: absolute;
+    right: 30px;
+}
+
+a {
+    color: #ff3c3c;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 25px #ff0000;
+}
+
+.age-link {
+    color: #212121;
+    position: center;
+    left: 30px;
+    animation: textGlow 3s infinite;
+    transition: transform 0.3s ease;
+}
+
+.age-link:hover {
+    transform: scale(1.1);
+
+}
+
+@keyframes textGlow {
+    0% { text-shadow: 0 0 5px #000000; }
+    50% { text-shadow: 0 0 15px #505050; }
+    100% { text-shadow: 0 0 5px #000000; }
+}
+
+/* TEXT */
+
+h1 {
+    letter-spacing: 15px;
+    text-shadow: 0 0 10px #0ad00099;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #ff0000;
+    text-shadow: #000000 0px 8px 10px;
+}
+
+h3 {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    color: #ff0000;
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+#board {
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* ticatactoe */
+.cell {
+    width: 100px;
+    height: 100px;
+
+
+    border: 1px solid #ff0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+    color: #00ff2a;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.cell:hover {
+    background: rgba(255,0,0,0.2);
+}
