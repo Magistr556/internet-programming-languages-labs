@@ -1,0 +1,118 @@
+.done {
+    color: #00ff00;
+    text-decoration: line-through;
+}
+
+.deleted {
+    color: #ff0000;
+    text-decoration: line-through;
+}
+
+/* GENERAL */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative; 
+    z-index: 10000;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(23, 0, 0, 0.9)
+        );
+    z-index: -1;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background: linear-gradient(180deg, #444444, #000000);
+    color: #ff3c3c;
+    padding: 15px;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+/* TEXT */
+
+h1 {
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px #ff0000;
+}
+
+/* INPUT */
+.todo-section input {
+    height: 40px;
+    width: 420px;
+    display: block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #ff0000;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    letter-spacing: 21px; 
+}
+
+/* TEXTAREA */
+.todo-section textarea {
+    width: 420px;
+    min-height: 40px;
+
+    display: block;
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #ff0000;
+
+    resize: none;        /* убирает ручное растягивание */
+    overflow: hidden;    /* скрывает скролл */
+
+    line-height: 1.4;
+}
+
+/* BUTTON */
+.todo-section button {
+    height: 40px;
+    width: 420px;
+    display: block;
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-section button:hover {
+    background-color: #838383;
+}
