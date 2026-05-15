@@ -26,18 +26,19 @@ function TodoForm({ tasks, setTasks }) {
   return (
     <div>
       <textarea
-        placeholder="Задача"
+        placeholder="ЗАDAЧА"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
 
       <textarea
-        placeholder="Описание"
+        placeholder="ОПИSАNИЕ"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
 
-      <button onClick={handleAdd}>Добавить</button>
+      <button onClick={handleAdd}>DOБAVИТЬ</button>
+      <button onClick={() => setTasks([])}>УDАLИТЬ VSЕ</button>
     </div>
   );
 }
