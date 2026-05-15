@@ -11,7 +11,7 @@ function TodoItem({ task, index, tasks, setTasks }) {
     updated[index].deleted = true;
     setTasks(updated);
   };
-
+  
   return (
     <li className={`${task.completed ? "done" : ""} ${task.deleted ? "deleted" : ""}`}>
       
