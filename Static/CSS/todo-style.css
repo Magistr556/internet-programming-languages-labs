@@ -1,3 +1,20 @@
+/* NOISE */
+.noise {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../images/noise.jpg);
+    background-size: 2800px;
+
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
+
+    pointer-events: none;
+    z-index: 9999;
+}
+
 .done {
     color: #00ff00;
     text-decoration: line-through;
@@ -52,6 +69,27 @@ header {
     color: #ff3c3c;
     padding: 15px;
     box-shadow: 0 0 15px #ff0000;
+}
+
+.header-left {
+    position: absolute;
+    left: 30px;
+}
+
+a {
+    color: #332f2f;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    transform: scale(1.1);
+    text-shadow:
+        0 0 10px #ff0000,
+        0 0 25px #ff0000;
 }
 
 /* TEXT */
