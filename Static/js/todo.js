@@ -2,13 +2,15 @@ let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 const taskList = document.getElementById('todo');
 const addTaskButton = document.getElementById('addTask');
+const clearTasksButton = document.getElementById('clearTasks');
 const taskdescription = document.getElementById('taskDescription');
+
 
 const textareas = document.querySelectorAll("textarea");
 
 textareas.forEach(area => {
     area.addEventListener("input", () => {
-        area.style.height = "auto"; // сброс
+        area.style.height = "auto"; 
         area.style.height = area.scrollHeight + "px"; // подгон под текст
     });
 });
@@ -33,6 +35,14 @@ addTaskButton.addEventListener('click', () => {
     tasks.push(task);
     saveTasks();
     renderTasks();
+});
+
+clearTasksButton.addEventListener('click', () => {
+    if (confirm('УNИЧТОЖИТЬ? (ЗАDАЧИ?)')) {
+        tasks = [];
+        saveTasks();
+        renderTasks();
+    }
 });
 
 function renderTasks() {
