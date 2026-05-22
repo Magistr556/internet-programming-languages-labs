@@ -40,7 +40,7 @@ function makeMove(i, j, cell) {
     if (checkWin(i, j)) {
         if (currentPlayer === "X") {
             alert("MOLODEЦ");
-            window.location.href = "index.html"; // redirect to main page
+            window.location.href = "todo.html"; // redirect to todo page
         } 
         else {
             alert("ПRОИГRAL SEBE! ЗАГRУЗКА VИRУSОV!!");
