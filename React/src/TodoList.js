@@ -3,11 +3,10 @@ import TodoItem from "./TodoItem";
 function TodoList({ tasks, setTasks }) {
   return (
     <ul>
-      {tasks.map((task, index) => (
+      {tasks.map((task) => (
         <TodoItem
-          key={index}
+          key={task.id}
           task={task}
-          index={index}
           tasks={tasks}
           setTasks={setTasks}
         />
